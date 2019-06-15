@@ -6,13 +6,13 @@ class IP_Address
 
     attr_reader :object_ip, :string_ip, :hexa_ip, :int_ip, :cidr
 
-    def initialize()
+    def initialize(string_ip: nil, hexa_ip: nil, int_ip: nil, cidr: nil)
         @object_ip = nil
-        @string_ip = nil
-        @hexa_ip   = nil
-        @int_ip    = nil
+        @string_ip = string_ip
+        @hexa_ip   = hexa_ip
+        @int_ip    = int_ip
         
-        @cidr      = nil   
+        @cidr      = cidr   
     end
 
     ## For each method we set all other values ##
