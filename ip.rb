@@ -42,17 +42,17 @@ class IP_Address
         @cidr = str_to_obj(c)
     end
 
-        ## For each IP Octect Convert to Integer, Pack into 32 Bit Integer, &
+        ## For each IP Octet Convert to Integer, Pack into 32 Bit Integer, &
         ##  unpack string to 32-bit unsigned, network (big-endian) byte order
 
     def str_to_int(str_value) str_value.split(".").map(&:to_i).pack('CCCC').unpack('N')[0] end 
 
         ## Pack string to 32-bit unsigned, network (big-endian) byte order &
-        ##  unpack to 4 x 8 byte Octects and join into string to form IP Address 
+        ##  unpack to 4 x 8 byte Octets and join into string to form IP Address 
 
     def int_to_ipa(int_value) [int_value].pack('N').unpack('CCCC').join('.') end
 
-        ## Convert int into regestered 16 byte string ( a hexadecimal )
+        ## Convert int into registered 16 byte string ( a hexadecimal )
 
     def int_to_hex(int_value) '0x' + int_value.to_s(16).upcase end
 
@@ -76,7 +76,7 @@ class IP_Address
 
 end
 
-## Testing Codes durring Development ##
+## Testing Codes during Development ##
 
 #example_hex_ip = '0x62D2ED4B'
 #example_str_ip = '98.210.237.75'
