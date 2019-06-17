@@ -1,6 +1,9 @@
 # Interview Homework (String INT to IP)
 #### William DeLuca
 
+### Gem Dependencies
+* `test-unit`
+
 ### IP_Address Class
 This class allows an input that will then be converted into the following:
 * String Representation of an IP address (e.g. `98.210.237.75`)
