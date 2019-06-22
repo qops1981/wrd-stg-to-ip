@@ -1,6 +1,8 @@
 # Interview Homework (String INT to IP)
 #### William DeLuca
 
+## Ruby
+
 ### Gem Dependencies
 * `test-unit`
 
@@ -19,17 +21,23 @@ ip.hexa_ip = '0x62D2ED4B'
 ip.string_ip 	#=> '98.210.237.75'
 ip.hexa_ip 		#=> '0x62D2ED4B'
 ip.int_ip 		#=> 1657990475
-
-# Example 2
-ip = IP_Address.new(hexa_ip: '0x62D2ED4B')
-
-ip.string_ip 	#=> '98.210.237.75'
-ip.hexa_ip 		#=> '0x62D2ED4B'
-ip.int_ip 		#=> 1657990475
 ```
 
 ### Unit Testing
 Testing setup to a list of explicit scenarios
 ```bash
 ./test_ip.rb
+```
+
+## Python3
+
+#### Examples
+```python
+# Example 1
+ip = IP_Address()
+ip.hexa_ip = '0x62D2ED4B'
+
+ip.string_ip 	#=> '98.210.237.75'
+ip.hexa_ip 		#=> '0x62d2ed4b'
+ip.int_ip 		#=> 1657990475
 ```
