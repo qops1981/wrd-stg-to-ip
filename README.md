@@ -41,3 +41,9 @@ ip.string_ip 	#=> '98.210.237.75'
 ip.hexa_ip 		#=> '0x62d2ed4b'
 ip.int_ip 		#=> 1657990475
 ```
+
+### Unit Testing
+Testing setup to a list of explicit scenarios
+```bash
+./test_ip.py
+```
